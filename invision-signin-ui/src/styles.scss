@@ -2,6 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
 @import 'fonts';
 
+@font-face{
+  font-family: 'Muli';
+  src: url("~src/assets/fonts/Muli.ttf");
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: 'Muli-Bold';
+  src: url("~src/assets/fonts/Muli-Bold.ttf");
+  font-weight: 700;
+}
+
+
+
+@font-face{
+  font-family: 'Avenir Heavy';
+  src: url("~src/assets/fonts/Avenir-Heavy.ttf");
+  font-weight: 700;
+}
+
 *{
     margin: 0;
     padding: 0;
