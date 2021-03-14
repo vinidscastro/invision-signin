@@ -1,4 +1,8 @@
 #screenComponent {
+    app-form{
+        width: 100%;
+        display: block;
+    }
     .screenContent {
         min-height: 100vh;
         height: 100%;
@@ -23,6 +27,8 @@
             &.screen-RIght {
                 background: var(--primary-color);
                 grid-area: "right";
+                width: 100%;
+                display: block;
             }
         }
     }

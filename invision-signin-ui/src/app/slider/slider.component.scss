@@ -1,5 +1,5 @@
 #sliderComponent{
-    padding: 127px;
+    // padding: 127px;
     margin: auto;
     .carousel{
         ol.carousel-indicators{
@@ -19,6 +19,7 @@
             max-width: 700px;
             margin: auto;
             display: flex;
+            padding: 15px;
             img{
                 margin: auto;
             }

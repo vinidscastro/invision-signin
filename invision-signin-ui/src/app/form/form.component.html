@@ -1,20 +1,35 @@
 <div id="formComponent">
     <form>
-        <div class="container">
-            <div class="col-12 text-right">
-                <p class="logo">Invision</p>
+
+        <div class="brand">
+            <p class="logo">Invision</p>
+        </div>
+        <div class="title">
+            <h1>Welcome to Invision</h1>
+        </div>
+
+        <div class="formContent">
+            <div class="fgroup">
+                <label for="">User name or Email</label>
+                <input type="email">
             </div>
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h1>Welcome to Invision</h1>
-                </div>
-                <div class="col-12 col-md-8 col-lg-5">
-                    <div class="fgroup">
-                        <label for="">User name or Email</label>
-                        <input type="text">
-                    </div>
-                </div>
+            <div class="fgroup">
+                <label for="">Password</label>
+                <input type="password">
+            </div>
+            <div class="recoverLink">
+                <a href="">Forgot Password?</a>
+            </div>
+            <button class="form-button signinButton">Sign In</button>
+            <div class="divider">
+                <span>Or</span>
+            </div>
+            <button class="form-button googleButton"><img src="./assets/images/google_logo.svg" alt="">Sign in with Google</button>
+            <div class="createAccount">
+                <p>New Invision? <a routerLink="/signup">Create Account</a></p>
             </div>
         </div>
+
+
     </form>
 </div>
