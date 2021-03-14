@@ -1,0 +1,22 @@
+#formComponent{
+    .logo{
+        margin-bottom: 70px;
+        font-size: 2em;
+        color: var(--default-black);
+        font-family: "Avenir";
+        font-weight: 700;
+    }
+    h1{
+        color: var(--medium-grey);
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .fgroup{
+        label{
+            display: block;
+        }
+        input{
+            display: block;
+        }
+    }
+}

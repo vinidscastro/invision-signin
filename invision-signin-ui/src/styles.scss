@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+@import 'fonts';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-default);
+}
+
+:root{
+  --primary-color: RGBA(169, 197, 186, 1);
+  --default-white: RGBA(255, 255, 255, 1);
+  --default-black: RGBA(0, 0, 0, 1);
+  --light-grey: RGBA(0, 0, 0, 0.16);
+  --medium-grey: RGBA(112, 112, 112, 1);
+  --font-default: "Muli", "sans-serif";
+  --font-heavy: "Muli-Bold", "sans-serif";
+}
+
+body{
+}
+
+p{
+  margin-bottom: 0;
+}

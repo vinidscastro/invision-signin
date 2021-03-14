@@ -1,0 +1,35 @@
+#sliderComponent{
+    padding: 127px;
+    margin: auto;
+    .carousel{
+        ol.carousel-indicators{
+            position: initial;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            li{
+                width: 12px;
+                height: 12px;
+                border-radius: 100px;
+                border: none;
+            }
+        }
+        .signinCarouselImage{
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            display: flex;
+            img{
+                margin: auto;
+            }
+        }
+        .signinCarouselText{
+            margin: 30px auto;
+            text-align: center;
+            color: var(--default-white);
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+}
