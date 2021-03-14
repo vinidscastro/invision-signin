@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
-@import 'fonts';
 
 @font-face{
   font-family: 'Muli';
@@ -13,8 +12,6 @@
   src: url("~src/assets/fonts/Muli-Bold.ttf");
   font-weight: 700;
 }
-
-
 
 @font-face{
   font-family: 'Avenir Heavy';
@@ -37,9 +34,6 @@
   --font-default: "Muli", "sans-serif";
   --font-heavy: "Muli-Bold", "sans-serif";
   --logo-font: "Avenir Heavy", "sans-serif";
-}
-
-body{
 }
 
 p{
