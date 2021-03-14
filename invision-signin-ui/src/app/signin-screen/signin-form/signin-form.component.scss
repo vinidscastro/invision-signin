@@ -1,0 +1,125 @@
+#signInForm {
+  padding: 15px;
+  form {
+    display: block;
+    width: 100%;
+  }
+  .brand {
+    width: 100%;
+    margin: auto;
+    max-width: 700px;
+    padding: 10px;
+    text-align: right;
+    .logo {
+      margin-bottom: 70px;
+      font-size: 2.1em;
+      color: var(--default-black);
+      font-family: var(--logo-font);
+      font-weight: 700;
+    }
+  }
+  .title {
+    width: 100%;
+    h1 {
+      color: var(--medium-grey);
+      text-align: center;
+      margin-bottom: 80px;
+      font-family: var(--font-default);
+      font-size: 1.9em;
+    }
+  }
+  .formContent {
+    width: 100%;
+    padding: 15px;
+    max-width: 433px;
+    margin: auto;
+    .fgroup {
+      width: 100%;
+      margin-bottom: 20px;
+      label {
+        display: block;
+        color: var(--medium-grey);
+        font-size: 1em;
+        margin-bottom: 0;
+      }
+      input {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--default-black);
+        padding: 15px 20px;
+        color: var(--default-black);
+        outline: none;
+        &.alert {
+          border-bottom: 1px solid red;
+        }
+      }
+      .alertMessage {
+        font-size: 0.9em;
+        color: red;
+      }
+    }
+    .recoverLink {
+      text-align: right;
+      a {
+        color: var(--medium-grey);
+        font-size: 1em;
+        &:active,
+        &:visited,
+        &:hover {
+          color: var(--medium-grey);
+        }
+      }
+    }
+    .form-button {
+      border: none;
+      margin: 30px auto;
+      display: block;
+      border-radius: 200px;
+      &.signinButton {
+        padding: 12px 60px;
+        background-color: var(--medium-grey);
+        color: var(--default-white);
+        &:disabled {
+          background-color: var(--light-grey);
+        }
+      }
+      &.googleButton {
+        padding: 12px 30px;
+        background-color: var(--default-white);
+        color: var(--default-black);
+        display: flex;
+        box-shadow: 0px 3px 6px #00000029;
+        img {
+          margin-right: 20px;
+        }
+      }
+    }
+    .divider {
+      margin: 40px auto;
+      border-bottom: 1px solid var(--medium-grey);
+      position: relative;
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--default-white);
+        padding: 5px;
+        color: var(--medium-grey);
+      }
+    }
+    .createAccount {
+      text-align: center;
+      margin: 40px auto;
+      p {
+        font-size: 1em;
+        color: var(--medium-grey);
+        a {
+          color: var(--primary-color);
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}

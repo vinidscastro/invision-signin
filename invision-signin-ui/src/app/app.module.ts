@@ -8,6 +8,9 @@ import { SignupScreenComponent } from './signup-screen/signup-screen.component';
 import { SliderComponent } from './slider/slider.component';
 import { ScreenComponentComponent } from './screen-component/screen-component.component';
 import { FormComponent } from './form/form.component';
+import { SignupFormComponent } from './signup-screen/signup-form/signup-form.component';
+import { SigninFormComponent } from './signin-screen/signin-form/signin-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -19,10 +22,14 @@ import { FormComponent } from './form/form.component';
     SliderComponent,
     ScreenComponentComponent,
     FormComponent,
+    SignupFormComponent,
+    SigninFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

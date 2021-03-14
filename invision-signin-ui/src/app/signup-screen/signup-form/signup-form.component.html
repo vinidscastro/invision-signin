@@ -1,0 +1,54 @@
+<div id="signupForm">
+  <form [formGroup]="registerForm">
+
+    <div class="brand">
+      <p class="logo">Invision</p>
+    </div>
+    <div class="title">
+      <h1>Getting Started</h1>
+    </div>
+
+    <div class="formContent">
+      <div class="fgroup">
+        <label for="name">Full Name</label>
+        <input id="name" [class.alert]="!registerForm.controls.name.valid && registerForm.controls.name.dirty"
+          formControlName="name" type="email">
+        <p class="alertMessage" *ngIf="registerForm.controls.name.value == '' && registerForm.controls.name.dirty">Este
+          Campo não pode ser vazio</p>
+      </div>
+      <div class="fgroup">
+        <label for="email">User name or Email</label>
+        <input id="email" [class.alert]="!registerForm.controls.email.valid && registerForm.controls.email.dirty"
+          formControlName="email" type="email">
+        <p class="alertMessage" *ngIf="!registerForm.controls.email.valid && registerForm.controls.email.dirty">O e-mail
+          está incorreto</p>
+        <p class="alertMessage" *ngIf="registerForm.controls.email.value == '' && registerForm.controls.email.dirty">
+          Este Campo não pode ser vazio</p>
+      </div>
+      <div class="fgroup">
+        <label for="password">Password</label>
+        <input id="password" [class.alert]="  " formControlName="password" type="password">
+        <p class="alertMessage" *ngIf="!registerForm.controls.password.valid && registerForm.controls.password.dirty">A
+          senha não pode ter menos
+          de 6 caracteres”</p>
+        <p class="alertMessage"
+          *ngIf="registerForm.controls.password.value == '' && registerForm.controls.password.dirty">Este Campo não pode
+          ser vazio</p>
+      </div>
+      <div class="recoverLink">
+        <a href="">Forgot Password?</a>
+      </div>
+      <button class="form-button signinButton" [disabled]="!registerForm.valid" (click)="submitForm()">Sign up</button>
+      <div class="divider">
+        <span>Or</span>
+      </div>
+      <button class="form-button googleButton"><img src="./assets/images/google_logo.svg" alt="">Sign in with
+        Google</button>
+      <div class="createAccount">
+        <p>Already on Invision? <a routerLink="/signup">Log in</a></p>
+      </div>
+    </div>
+
+
+  </form>
+</div>

@@ -1,0 +1,47 @@
+<div id="signInForm">
+  <form [formGroup]="signinForm">
+
+    <div class="brand">
+      <p class="logo">Invision</p>
+    </div>
+    <div class="title">
+      <h1>Welcome to Invision</h1>
+    </div>
+
+    <div class="formContent">
+      <div class="fgroup">
+        <label for="email">User name or Email</label>
+        <input id="email" [class.alert]="!signinForm.controls.email.valid && signinForm.controls.email.dirty"
+          formControlName="email" type="email">
+        <p class="alertMessage" *ngIf="!signinForm.controls.email.valid && signinForm.controls.email.dirty">O e-mail
+          está incorreto</p>
+        <p class="alertMessage" *ngIf="signinForm.controls.email.value == '' && signinForm.controls.email.dirty">
+          Este Campo não pode ser vazio</p>
+      </div>
+      <div class="fgroup">
+        <label for="password">Password</label>
+        <input id="password" [class.alert]="  " formControlName="password" type="password">
+        <p class="alertMessage" *ngIf="!signinForm.controls.password.valid && signinForm.controls.password.dirty">A
+          senha não pode ter menos
+          de 6 caracteres”</p>
+        <p class="alertMessage"
+          *ngIf="signinForm.controls.password.value == '' && signinForm.controls.password.dirty">Este Campo não pode
+          ser vazio</p>
+      </div>
+      <div class="recoverLink">
+        <a href="">Forgot Password?</a>
+      </div>
+      <button class="form-button signinButton" [disabled]="!signinForm.valid" (click)="submitForm()">Sign In</button>
+      <div class="divider">
+        <span>Or</span>
+      </div>
+      <button class="form-button googleButton" ><img src="./assets/images/google_logo.svg" alt="">Sign in with
+        Google</button>
+      <div class="createAccount">
+        <p>New Invision? <a routerLink="/signup">Create Account</a></p>
+      </div>
+    </div>
+
+
+  </form>
+</div>

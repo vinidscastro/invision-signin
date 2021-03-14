@@ -1,0 +1,35 @@
+#signinScreen {
+    app-signin-form{
+        width: 100%;
+        display: block;
+    }
+    .signinContent {
+        min-height: 100vh;
+        height: 100%;
+        display: grid;
+        @media (min-width: 992px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "left right";
+        }
+        .screen-column {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.screen-Left {
+                background: var(--primary-color);
+                grid-area: "left";
+                @media (max-width: 991px) {
+                    display: none;
+                }
+            }
+            &.screen-RIght {
+                background: var(--primary-color);
+                grid-area: "right";
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
